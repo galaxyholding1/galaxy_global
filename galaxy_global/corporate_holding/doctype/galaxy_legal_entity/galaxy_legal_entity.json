@@ -1,0 +1,118 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:legal_name",
+ "creation": "2025-12-13 04:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "legal_name",
+  "country",
+  "jurisdiction_type",
+  "entity_role",
+  "column_break_1",
+  "registration_number",
+  "tax_id",
+  "parent_entity",
+  "section_break_2",
+  "description",
+  "is_active"
+ ],
+ "fields": [
+  {
+   "fieldname": "legal_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Legal Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "country",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Country",
+   "options": "Country",
+   "reqd": 1
+  },
+  {
+   "fieldname": "jurisdiction_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Jurisdiction Type",
+   "options": "Delaware\nSOPARFI Lux\nETVE\nSpain SL\nMalta PCC\nEstonia\nLithuania\nOther",
+   "reqd": 1
+  },
+  {
+   "fieldname": "entity_role",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Entity Role",
+   "options": "Matriz\nHolding\nOperativa\nFinanciera\nIndustrial\nFintech\nInsurance\nReal Estate\nSoftware",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "registration_number",
+   "fieldtype": "Data",
+   "label": "Registration Number"
+  },
+  {
+   "fieldname": "tax_id",
+   "fieldtype": "Data",
+   "label": "Tax ID / NIF / EIN"
+  },
+  {
+   "fieldname": "parent_entity",
+   "fieldtype": "Link",
+   "label": "Parent Entity",
+   "options": "Galaxy Legal Entity"
+  },
+  {
+   "fieldname": "section_break_2",
+   "fieldtype": "Section Break",
+   "label": "Additional Information"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text",
+   "label": "Description"
+  },
+  {
+   "default": "1",
+   "fieldname": "is_active",
+   "fieldtype": "Check",
+   "label": "Is Active"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-12-13 04:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Corporate Holding",
+ "name": "Galaxy Legal Entity",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

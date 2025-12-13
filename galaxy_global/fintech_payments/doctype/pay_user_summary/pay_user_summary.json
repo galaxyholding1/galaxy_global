@@ -1,0 +1,125 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{platform}-{user_type}-{####}",
+ "creation": "2025-12-13 04:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "platform",
+  "user_type",
+  "reporting_date",
+  "column_break_1",
+  "active_users",
+  "monthly_tx_volume",
+  "currency",
+  "section_break_2",
+  "average_tx_size",
+  "total_transactions",
+  "section_break_3",
+  "notes"
+ ],
+ "fields": [
+  {
+   "fieldname": "platform",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Platform",
+   "options": "Pay Platform",
+   "reqd": 1
+  },
+  {
+   "fieldname": "user_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "User Type",
+   "options": "Retail\nBusiness",
+   "reqd": 1
+  },
+  {
+   "default": "Today",
+   "fieldname": "reporting_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Reporting Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "active_users",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Active Users"
+  },
+  {
+   "fieldname": "monthly_tx_volume",
+   "fieldtype": "Currency",
+   "label": "Monthly Transaction Volume",
+   "options": "currency"
+  },
+  {
+   "default": "EUR",
+   "fieldname": "currency",
+   "fieldtype": "Link",
+   "label": "Currency",
+   "options": "Currency"
+  },
+  {
+   "fieldname": "section_break_2",
+   "fieldtype": "Section Break",
+   "label": "Statistics"
+  },
+  {
+   "fieldname": "average_tx_size",
+   "fieldtype": "Currency",
+   "label": "Average Transaction Size",
+   "options": "currency",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_transactions",
+   "fieldtype": "Int",
+   "label": "Total Transactions"
+  },
+  {
+   "fieldname": "section_break_3",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Text",
+   "label": "Notes"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-12-13 04:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Fintech Payments",
+ "name": "Pay User Summary",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

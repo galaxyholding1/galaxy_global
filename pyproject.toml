@@ -1,0 +1,25 @@
+[project]
+name = "galaxy_global"
+version = "0.0.1"
+description = "Galaxy Global Group - Corporate ERP Layer"
+authors = [
+    { name = "Galaxy DevOps Team", email = "devops@galaxynp.holdings" }
+]
+dependencies = [
+    "frappe"
+]
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+
+[build-system]
+requires = ["flit_core >=3.4,<4"]
+build-backend = "flit_core.buildapi"
+
+[tool.bench]
+developer_mode = true
+
+[project.urls]
+Homepage = "https://github.com/GalaxyNP/galaxy-global-erpnext"
+Documentation = "https://github.com/GalaxyNP/galaxy-global-erpnext/wiki"
+Repository = "https://github.com/GalaxyNP/galaxy-global-erpnext"

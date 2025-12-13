@@ -1,0 +1,120 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:plant_name",
+ "creation": "2025-12-13 04:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "plant_name",
+  "legal_entity",
+  "location",
+  "column_break_1",
+  "capacity_tons_per_year",
+  "status",
+  "section_break_2",
+  "iscc_certificate",
+  "sicbios_certificate",
+  "section_break_3",
+  "description"
+ ],
+ "fields": [
+  {
+   "fieldname": "plant_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Plant Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "legal_entity",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Legal Entity",
+   "options": "Galaxy Legal Entity",
+   "reqd": 1
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Location / City",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "capacity_tons_per_year",
+   "fieldtype": "Float",
+   "label": "Capacity (Tons/Year)",
+   "precision": "2"
+  },
+  {
+   "default": "Planning",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Status",
+   "options": "Planning\nUnder Construction\nOperational\nMaintenance\nClosed",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_2",
+   "fieldtype": "Section Break",
+   "label": "Certifications"
+  },
+  {
+   "fieldname": "iscc_certificate",
+   "fieldtype": "Link",
+   "label": "ISCC Certificate",
+   "options": "Certification"
+  },
+  {
+   "fieldname": "sicbios_certificate",
+   "fieldtype": "Link",
+   "label": "SICBIOS Certificate",
+   "options": "Certification"
+  },
+  {
+   "fieldname": "section_break_3",
+   "fieldtype": "Section Break",
+   "label": "Additional Information"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text",
+   "label": "Description"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-12-13 04:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Bio Industrial",
+ "name": "Bio Plant",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

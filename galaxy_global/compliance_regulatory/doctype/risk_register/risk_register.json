@@ -1,0 +1,171 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:RISK-{risk_category}-{####}",
+ "creation": "2025-12-13 04:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "risk_title",
+  "risk_category",
+  "affected_entity",
+  "column_break_1",
+  "probability",
+  "impact",
+  "risk_score",
+  "section_break_2",
+  "description",
+  "section_break_3",
+  "owner_user",
+  "status",
+  "column_break_4",
+  "identified_date",
+  "last_review_date",
+  "section_break_5",
+  "mitigation_plan",
+  "section_break_6",
+  "notes"
+ ],
+ "fields": [
+  {
+   "fieldname": "risk_title",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Risk Title",
+   "reqd": 1
+  },
+  {
+   "fieldname": "risk_category",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Risk Category",
+   "options": "Operational\nFinancial\nRegulatory\nIT/Cyber\nReputational\nStrategic\nMarket\nLegal\nEnvironmental\nOther",
+   "reqd": 1
+  },
+  {
+   "fieldname": "affected_entity",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Affected Entity",
+   "options": "Galaxy Legal Entity"
+  },
+  {
+   "fieldname": "column_break_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "description": "Scale: 1 (Very Low) to 5 (Very High)",
+   "fieldname": "probability",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Probability (1-5)",
+   "reqd": 1
+  },
+  {
+   "description": "Scale: 1 (Very Low) to 5 (Very High)",
+   "fieldname": "impact",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Impact (1-5)",
+   "reqd": 1
+  },
+  {
+   "fieldname": "risk_score",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Risk Score (P x I)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_2",
+   "fieldtype": "Section Break",
+   "label": "Risk Description"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text",
+   "label": "Description",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_3",
+   "fieldtype": "Section Break",
+   "label": "Ownership & Status"
+  },
+  {
+   "fieldname": "owner_user",
+   "fieldtype": "Link",
+   "label": "Risk Owner",
+   "options": "User"
+  },
+  {
+   "default": "Identified",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_standard_filter": 1,
+   "label": "Status",
+   "options": "Identified\nAssessing\nMitigating\nMonitoring\nClosed\nAccepted"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Today",
+   "fieldname": "identified_date",
+   "fieldtype": "Date",
+   "label": "Identified Date"
+  },
+  {
+   "fieldname": "last_review_date",
+   "fieldtype": "Date",
+   "label": "Last Review Date"
+  },
+  {
+   "fieldname": "section_break_5",
+   "fieldtype": "Section Break",
+   "label": "Mitigation"
+  },
+  {
+   "fieldname": "mitigation_plan",
+   "fieldtype": "Text",
+   "label": "Mitigation Plan"
+  },
+  {
+   "fieldname": "section_break_6",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Text",
+   "label": "Notes"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-12-13 04:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Compliance Regulatory",
+ "name": "Risk Register",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

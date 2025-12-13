@@ -1,0 +1,51 @@
+{
+ "actions": [],
+ "creation": "2025-12-13 04:00:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "bio_plant",
+  "allocated_amount",
+  "co2_avoided_tons"
+ ],
+ "fields": [
+  {
+   "columns": 3,
+   "fieldname": "bio_plant",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Bio Plant",
+   "options": "Bio Plant",
+   "reqd": 1
+  },
+  {
+   "columns": 2,
+   "fieldname": "allocated_amount",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Allocated Amount",
+   "reqd": 1
+  },
+  {
+   "columns": 2,
+   "fieldname": "co2_avoided_tons",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "CO2 Avoided (Tons)",
+   "precision": "2"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-12-13 04:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Treasury Finance",
+ "name": "Green Bond Project",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
