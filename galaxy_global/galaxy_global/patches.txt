@@ -1,0 +1,3 @@
+# Patches for galaxy_global
+# Add patch entries here in the format:
+# module.patch.patch_file
